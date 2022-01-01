@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 
 <html>
+
   <head>
-    <title>URL Shortener Microservice | freeCodeCamp.org</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png"
-    />
-    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+    <title>URL Shortener Microservice</title>
+    <link rel="icon" type="image/png" href=""/>
+    <link href="/public/style.css" rel="stylesheet" type="text/css"/>
   </head>
 
   <body>
-    <h1>URL Shortener Microservice</h1>
-    <main>
-      <section>
-        <form action="api/shorturl" method="POST">
-          <fieldset>
-            <legend>URL Shortener</legend>
-            <label for="url_input">URL:</label>
-            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
-            <input type="submit" value="POST URL" />
-          </fieldset>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>By <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>
-    </footer>
+    <!--Title-->
+    <div id="title-container">
+      <h1>URL Shortener Microservice</h1>
+      <h2>A freeCodeCamp project from the Back End Development and APIs Certification</h2>
+    </div>
+    <!--Content-->
+    <div id="main-container">
+      <form action="api/shorturl" method="POST">
+        <fieldset>
+          <legend><h3>URL Shortener</h3></legend>
+          <label for="url_input">Enter URL to shorten:</label>
+          <input id="url_input" type="text" name="url" placeholder="https://www.google.com/"/>
+          <input id="button" type="submit" value="Shorten">
+        </fieldset>
+      </form>
+      <h3>Usage</h3>
+      <p>
+        Make a POST request above with a valid URL address and get a shortened URL.
+      </p>
+      <p>
+        Then, you can make a GET request to <b>/api/shorturl/:shortened-url?</b> and you will be redirected to the original URL.
+      </p>
+      <a href="api/shorturl/8SHzTdN03" class="exemple-link">/api/shorturl/8SHzTdN03</a>
+      <h3>Output</h3>
+      <code>{"original_url": "https://www.google.com/", "short_url": "8SHzTdN03"}</code>
+      <h3>Learn More</h3>
+      <p>
+        For more information please visit this project's repository on
+        <a href="https://github.com/victordrumond/url-shortener-microservice" target="_blank">GitHub</a>.
+      </p>
+    </div>
   </body>
+
 </html>
