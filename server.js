@@ -63,7 +63,7 @@ app.post('/api/shorturl', (req, res) => {
               console.error(err);
             } else {
               res.json({
-                orignal_url: newURL.original_url,
+                original_url: newURL.original_url,
                 short_url: newURL.short_url
               });
             };
@@ -71,7 +71,7 @@ app.post('/api/shorturl', (req, res) => {
         // If URL is already on databse we just have to return a JSON
         } else {
           res.json({
-            orignal_url: docs[0].original_url,
+            original_url: docs[0].original_url,
             short_url: docs[0].short_url
           });
         };
