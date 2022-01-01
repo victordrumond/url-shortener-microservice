@@ -16,14 +16,14 @@
     </div>
     <!--Content-->
     <div id="main-container">
-      <form action="api/shorturl" method="POST">
-        <fieldset>
-          <legend><h3>URL Shortener</h3></legend>
-          <label for="url_input">Enter URL to shorten:</label>
+      <div id="form-container">
+        <h3>URL Shortener</h3>
+        <form action="api/shorturl" method="POST">
+          <label for="url_input">Enter URL:</label>
           <input id="url_input" type="text" name="url" placeholder="https://www.google.com/"/>
           <input id="button" type="submit" value="Shorten">
-        </fieldset>
-      </form>
+        </form>
+      </div>
       <h3>Usage</h3>
       <p>
         Make a POST request above with a valid URL address and get a shortened URL.
