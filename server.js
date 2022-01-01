@@ -53,7 +53,6 @@ app.post('/api/shorturl', (req, res) => {
         // If URL is not on database we should save it
         if (docs.length === 0) {
           const urlShortened = shortid.generate(); // Generate unique ID to new URL
-          console.log(typeof urlShortened);
           let newURL = new urlModel({
             original_url: req.body.url,
             short_url: urlShortened
