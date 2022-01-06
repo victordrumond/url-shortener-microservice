@@ -2,12 +2,12 @@
 https://victordrumond-url-shortener.herokuapp.com/
 
 ## Technologies
-`HTML` `CSS` `JavaScript` `Node.js` `Express.js` `MongoDB` `Mongoose`
+`HTML` `CSS` `JavaScript` `Node.js` `Express.js` `Mongoose`
 
 ## About
 * A [project](https://www.freecodecamp.org/learn/back-end-development-and-apis/back-end-development-and-apis-projects/url-shortener-microservice) from freeCodeCamp's Back End Development and APIs Certification.
 * Make a POST request entering a valid URL address and get a unique code to use as a shortened URL.
-* Make a GET request to the API endpoint: `[url]/api/shorturl/shortened-URL` to be redirected to the original URL.
+* Make a GET request to the API endpoint `[url]/api/shorturl/shortened-URL` to be redirected to the original URL.
 * Database hosted on [MongoDB Atlas](https://www.mongodb.com/atlas).
 * App running on Heroku. [Learn more](https://devcenter.heroku.com/articles/getting-started-with-nodejs).
 
